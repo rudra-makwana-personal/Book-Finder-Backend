@@ -1,0 +1,6 @@
+keywords: love , lastTimeSearched: 2020-03-25 12:19:42.709000 , frequency: 10
+keywords: rose , lastTimeSearched: 2020-03-25 12:22:00.452000 , frequency: 1
+keywords: loves , lastTimeSearched: 2020-03-25 15:44:52.982000 , frequency: 5
+keywords: earth , lastTimeSearched: 2020-03-25 15:51:58.947000 , frequency: 40
+keywords: EARTH , lastTimeSearched: 2020-03-25 16:40:42.486000 , frequency: 1
+keywords: note , lastTimeSearched: 2020-03-25 16:44:57.501000 , frequency: 1
