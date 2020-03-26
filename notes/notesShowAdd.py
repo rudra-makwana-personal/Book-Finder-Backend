@@ -34,11 +34,14 @@ def addNotes(keyword,noteFromUI):
     i = 0
     flag = 0
     for i in range(len(js["notes"])):
+        print("here")
         if (js["notes"][i]["key"] == keyword):
             js["notes"][i]["note"].append(noteFromUI)
             flag = 1
         i = i + 1
+    print(flag)
     if flag == 0:
+        print("there")
         tempMainList = []
         tempDict = {}
         tempDict["key"] = keyword
@@ -47,6 +50,7 @@ def addNotes(keyword,noteFromUI):
         tempDict["note"] = tempList
         tempMainList.append(tempDict)
         js.loc[i] = tempMainList
+        print(js)
         js.to_json("notes.json")
 
     js.to_json("notes.json")
@@ -64,10 +68,11 @@ def showNote(keyword):
     f.close()
     i = 0
     for i in range(len(jsonData['notes'])):
+        print(jsonData['notes'][str(i)]['key'])
         if (jsonData['notes'][str(i)]['key']) == keyword:
             return (jsonData['notes'][str(i)])
-        else:
-            return "Null"
+        i = i + 1
+    return "Null"
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port='5150',debug=True)
